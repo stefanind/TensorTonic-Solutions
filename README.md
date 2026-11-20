@@ -133,6 +133,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Scaled Dot-Product Attention | Implement three-stage scaled dot-product attention in Triton with tiled scores, stable softmax, and value aggregation. | https://www.tensortonic.com/problems/triton-scaled-dot-product-attention |
 | SiLU | Implement fused SiLU or Swish activation in Triton with contiguous tiles, sigmoid weighting, and masked tails. | https://www.tensortonic.com/problems/triton-silu |
 | Vector Sum Reduction | Implement tiled vector sum reduction in Triton with register partials, atomic accumulation, and masked tail lanes. | https://www.tensortonic.com/problems/triton-sum |
+| Tiled Transpose | Implement tiled matrix transpose in Triton by swapping load and store strides with masked boundary tiles. | https://www.tensortonic.com/problems/triton-transpose |
 | Vector Addition | Implement elementwise vector addition in Triton with contiguous program tiles and safe masking for partial tails. | https://www.tensortonic.com/problems/triton-vector-addition |
 | Vectorized Vector Add | Implement vector addition in Triton with larger per-program tiles to reduce launch overhead while masking the final tail. | https://www.tensortonic.com/problems/triton-vectorized-load |
 | Forward Diffusion Process | Implement the DDPM forward diffusion process by mixing clean samples with Gaussian noise at a selected timestep. | https://www.tensortonic.com/research/ddpm/ddpm-forward |
