@@ -31,10 +31,8 @@ def linear_attention_duality(
         Q = q[:, t, :].float()  # [B, Dk]
         K = k[:, t, :].float()  # [B, Dk]
         V = v[:, t, :].float()  # [B, Dv]
-
         update = K[:, :, None] * V[:, None, :]
         state = state + update # B, Dk, Dv
-
         # B, 1, Dk @ B, Dk, Dv
         y = Q.unsqueeze(1) @ state # B, 1, Dv
         outputs.append(y.squeeze(1))
