@@ -49,6 +49,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Generate a Warmup-Stable-Decay Schedule | Generate a horizon-independent linear warmup, an exact stable phase, and cosine decay with declared endpoints. | https://www.tensortonic.com/problems/cs336-l11-wsd-learning-rate |
 | Build an Assistant-Only SFT Loss Mask | Build a shifted supervised-fine-tuning loss mask that trains only on assistant tokens and ignores padding and controls. | https://www.tensortonic.com/problems/cs336-l15-assistant-only-sft-mask |
 | Patchify a Batch of Images | Split PyTorch image batches into a row-major grid of non-overlapping flattened Vision Transformer patches. | https://www.tensortonic.com/problems/cs336-l17-vision-transformer-patchify |
+| Route Cache-Aware Prefill Requests | Route prefill requests by arrival order using cache reuse and queued work to select among independent workers. | https://www.tensortonic.com/problems/cs336-l18-cache-aware-prefill-routing |
 | Mean IoU for Segmentation | Compute the mean Intersection-over-Union (mIoU) for a semantic segmentation prediction. | https://www.tensortonic.com/problems/cv-miou |
 | ViT Patchify | Split image batches into row-major non-overlapping patches and flatten each patch in spatial-then-channel order. | https://www.tensortonic.com/problems/cv-patchify |
 | Top-K Classification Accuracy | Given logits of shape (N, K) and integer targets of shape (N,) with each target in [0, K), compute the top-k classification accuracy. | https://www.tensortonic.com/problems/cv-topk-accuracy |
